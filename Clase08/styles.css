@@ -1,0 +1,14 @@
+.gigante {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.titulo {
+    color: blue;
+    font-style: italic;
+}
+
+.strong {
+    font-weight: 700;
+    font-size: 18px;
+}
