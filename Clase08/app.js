@@ -118,6 +118,7 @@ productos.forEach( (prod) => {
         <h3 class="titulo">${prod.nombre}</h3>
         <p class="strong">Precio: $${prod.precio}</p>
         <p>Código: ${prod.id}</p>
+        <button onclick="agregarAlCarrito(${prod.id})">Agregar</button>
     `
 
     contenedorProductos.append(div)

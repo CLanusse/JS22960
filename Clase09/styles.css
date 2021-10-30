@@ -1,0 +1,59 @@
+body {
+    min-height: 100vh;
+}
+
+
+.agrandar {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+
+/* modal  */
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+#modal {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.modal-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.moverse {
+    margin-left: 150px;
+}
+
+/* INPUTS */
+input:focus {
+    outline: none;
+}
+
+.valido {
+    border: yellowgreen 2px solid;
+}
+
+.invalido {
+    border: red 2px solid;
+}
