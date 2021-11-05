@@ -13,10 +13,8 @@ const clickeado = () => {
 // boton1.addEventListener('click', clickeado)
 
 boton1.addEventListener('click', (event) => {
-
-    console.log(event)
-
-    console.log(event.target)
+    console.log(event) 
+    console.log(event.target) 
 
     console.log(event.x)
     console.log(event.y)
