@@ -1,0 +1,27 @@
+/* body {
+    opacity: 0;
+    transition: all 2s ease-in-out 2s;
+} */
+
+
+#loader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 700;
+    opacity: 1;
+    visibility: visible;
+    transition: all 2s ease-out 2s
+}
+
+.backRed {
+    background-color: red;
+}
