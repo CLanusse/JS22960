@@ -9,39 +9,41 @@ let resultadosExamen = {
 };
 
 
-let {Sexta, Segunda, Cuarta} = resultadosExamen
-
-// Tercera = 4
-// Quinta = 5
-// Primera = 0
+let {Septima, Sexta, Cuarta} = resultadosExamen
 
 
-// console.log(Sexta)
-// console.log(Segunda)
-// console.log(Cuarta)
+// console.log(Septima)
 
-// const mostrarDesestructurado = ( {Primera} ) => {
-//   console.log(Primera)
-// }
-// mostrarDesestructurado(resultadosExamen)
-
-
-// fetch(url)
-//   .then((res) => res.json)
-//   .then(( {productos} ) => {
-//       // const {productos} = data
-//       console.log(productos)
-//   })
-
+// desestructuración de arrays
 
 const arreglo = [1, 2, 3, 4, 5, 6]
 
-const copiaDeArreglo = [...arreglo] // copia de arreglo con inmutabilidad
-copiaDeArreglo[0] = 123
-
-// console.log(arreglo)
-// console.log(copiaDeArreglo)
-
-let [a, b] = arreglo
+const [,,, a, b] = arreglo
 
 // console.log(a, b)
+
+const data = [{nombre: "Juan", apellido: "Doe"}, ["Pepe", "Jorge", "Raul"]]
+
+const [usuario, mascotas] = data
+
+// console.log(usuario)
+// console.log(mascotas)
+
+
+// SPREAD OPERATOR ...
+
+// console.log(...mascotas)
+
+const copia = [...mascotas, "Dario"]
+copia[0] = "Julieta"
+// console.log(copia)
+// console.log(mascotas)
+
+
+const usuarioActual = {
+    ...usuario,
+    mascotas: mascotas,
+    nombre: "Jorge"
+}
+
+console.log(usuarioActual)
