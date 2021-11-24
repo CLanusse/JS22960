@@ -10,12 +10,13 @@ const llamarAPI = (query) => {
         .then( (resp) => resp.json() )
         .then( (data) => {
     
-            console.log(data)
-            id = data.id
+            const {name, sprites:{front_default:img}, id:pokemonID} = data
+
+            id = pokemonID
     
             $('#pokemon').html(`
-                <h2>${data.name}</h2>
-                <img src=${data.sprites.front_default} alt=${data.name} />
+                <h2>${name}</h2>
+                <img src=${img} alt=${name} />
             `)
         })
 }
